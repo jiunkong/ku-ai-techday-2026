@@ -2,15 +2,8 @@
 
 import { LinkText } from "@/components/LinkText";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 export default function Home() {
-    const [size, setSize] = useState<[number, number]>([0, 0])
-
-    useEffect(() => {
-        setSize([window.innerWidth, window.innerHeight])
-    }, [])
-
     const intro = `고려대학교 ICT명품인재양성사업단/초지능연구센터는 10월 20일(수)에 제4회 AI Tech Day를 개최합니다. 본교 하나스퀘어에서 열리는 AI Tech Day 2026에서는 서울대학교 이경무 교수, KAIST 신진우 교수와 42dot, Meta, Apple, NVIDIA, AWS, 크래프톤, 로보티즈, LG전자의 AI 연구개발 책임자들이 AI 연구개발 성과와 미래 전략을 발표합니다. 여기에 더불어, 사업단 소속 연구실의 포스터와 데모 세션이 준비되고, 기업체 홍보 및 리크루팅 프로그램도 마련됩니다. AI의 현재와 미래를 보고자 하는 분들의 많은 참석 바랍니다.`
 
     return (
@@ -49,12 +42,12 @@ export default function Home() {
                 </LinkText>
                 <div className="text-(--subtext) mt-1 ml-8">사전등록하신 분들에게는 배지(네임택)와 행사 당일 사용가능한 쿠폰을 제공합니다.</div>
                 <div className="mt-15">
-                    <h3 className="font-bold text-2xl">연구 교류 및 성과 공유</h3>
+                    <h3 className="font-bold text-2xl">AI Tech Day 2026 주요 프로그램</h3>
                     <ul className="mt-1 text-sm">
-                        <li>사업단 소속 교수진 연구개발 성과 발표</li>
-                        <li>사업단 산하 연구실 포스터 전시 및 데모</li>
-                        <li>AI 기업 연구개발 성과 및 미래 전략 발표</li>
-                        <li>기업체 홍보 및 리크루팅</li>
+                        <li>AI 분야 전문가 키노트 강연</li>
+                        <li>글로벌 AI 기업 전문가 초청 강연</li>
+                        <li>AWS AI Innovators Challenge 데모 및 시상</li>
+                        <li>기업 홍보 및 리크루팅</li>
                     </ul>
                 </div>
                 <div>
@@ -72,17 +65,9 @@ export default function Home() {
                         <h4 className="text-lg mt-2">ICT명품인재양성사업단/초지능연구센터장</h4>
                         <h4 className="text-xl font-bold">한정현 교수</h4>
                     </div>
-                    { size[0] >= 460 ?
-                        <p className="mt-3 w-[460px]">
-                            {intro.split('\n').map((text, idx, arr) => 
-                                <span key={idx} className={`block ${ idx < arr.length - 1 ? "[text-align-last:justify]" : ""}`}>{text}</span>
-                            )}
-                        </p>
-                        :
-                        <p className="mt-3 w-full text-justify">
-                            {intro}
-                        </p>
-                    }
+                    <p className="mt-3 w-full max-w-[460px] text-justify whitespace-pre-line">
+                        {intro}
+                    </p>
                     <LinkText link="https://mpij.korea.ac.kr/mpij/index.do" className="origin-right mt-2 mb-20 lg:mb-0" blank>
                         <div className="flex gap-2 items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">

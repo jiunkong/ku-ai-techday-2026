@@ -18,36 +18,34 @@ const SpeakerItem = (props: { image: string, name: string, desc: string, career:
                         <span className="font-bold text-3xl">{props.name}</span>
                         <span className="ml-2 text-(--title) font-bold">{props.desc}</span>
                     </h2>
-                    <div className="flex flex-col md:flex-row gap-6 md:gap-10 mt-3">
-                        { props.academy.length > 0 && (
-                            <div className="md:w-64 shrink-0">
-                                <h3 className="font-bold text-(--title) mb-1">학력</h3>
-                                <ol>
-                                    { props.academy.map((item, i) => {
-                                        return (
-                                            <li key={i} className="text-sm">
-                                                {item}
-                                            </li>
-                                        )
-                                    }) }
-                                </ol>
-                            </div>
-                        ) }
-                        { props.career.length > 0 && (
-                            <div className="grow min-w-0">
-                                <h3 className="font-bold text-(--title) mb-1">경력</h3>
-                                <ol className="lg:max-h-[140px] lg:overflow-y-auto scrollbar-clean pr-2">
-                                    { props.career.map((item, i) => {
-                                        return (
-                                            <li key={i} className="text-sm whitespace-pre-wrap">
-                                                {item}
-                                            </li>
-                                        )
-                                    }) }
-                                </ol>
-                            </div>
-                        ) }
-                    </div>
+                    { props.academy.length > 0 && (
+                        <div className="mt-3">
+                            <h3 className="font-bold text-(--title) mb-1">학력</h3>
+                            <ol>
+                                { props.academy.map((item, i) => {
+                                    return (
+                                        <li key={i} className="text-sm">
+                                            {item}
+                                        </li>
+                                    )
+                                }) }
+                            </ol>
+                        </div>
+                    ) }
+                    { props.career.length > 0 && (
+                        <div className="mt-3">
+                            <h3 className="font-bold text-(--title) mb-1">경력</h3>
+                            <ol className="lg:max-h-[140px] lg:overflow-y-auto scrollbar-clean pr-2">
+                                { props.career.map((item, i) => {
+                                    return (
+                                        <li key={i} className="text-sm whitespace-pre-wrap">
+                                            {item}
+                                        </li>
+                                    )
+                                }) }
+                            </ol>
+                        </div>
+                    ) }
                 </div>
             </div>
             <div className="mt-8 lg:mt-10">
@@ -91,13 +89,16 @@ export default function Speaker() {
                     "2020 ~ 현재 Meta 연구원"
                 ]} speech={{
                     name: "My Bitter Lesson with Computer Graphics",
-                    content: `In his essay "The Bitter Lesson," Richard Sutton argued that general methods leveraging computation ultimately outperform hand-crafted ones. In this talk, I share my own version of this lesson, learned the hard way over a decade in computer graphics. Where does the bitter lesson apply to graphics, and where does it not? I argue that the answer depends on whether a problem genuinely requires 3D, physics, and control, or if it simply produces 2D pixels. I will also share a few advices for graduate students starting their research today, showing which directions will compound in value over a decade, and which will be quietly subsumed by the next scale-up.`
+                    content: 
+`In his essay "The Bitter Lesson," Richard Sutton argued that general methods leveraging computation ultimately outperform hand-crafted ones.
+In this talk, I share my own version of this lesson, learned the hard way over a decade in computer graphics.
+Where does the bitter lesson apply to graphics, and where does it not?
+I argue that the answer depends on whether a problem genuinely requires 3D, physics, and control, or if it simply produces 2D pixels.
+I will also share a few advices for graduate students starting their research today, showing which directions will compound in value over a decade, and which will be quietly subsumed by the next scale-up.`
                 }} />
 
                 <SpeakerItem image="/speaker/3.png" name="이경무" desc="서울대학교" academy={[
-                    "1993 미국 Univ. of Southern California 박사",
-                    "1986 서울대학교 제어계측공학과 석사",
-                    "1984 서울대학교 제어계측공학과 학사",
+                    "1993 미국 Univ. of Southern California 박사 / 1986 서울대학교 제어계측공학과 석사 / 1984 서울대학교 제어계측공학과 학사",
                 ]} career={[
                     "2022 ~ 현재 서울대학교 석좌교수 (SNU Distinguished Professor)",
                     "2022 ~ 현재 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 편집장 (Editor-in-Chief)",
@@ -109,7 +110,10 @@ export default function Speaker() {
                     "2003 ~ 현재 서울대학교 전기·정보공학부 교수",
                 ]} speech={{
                     name: "AI 시대, 연구자의 의미와 역할은 무엇인가?",
-                    content: `최근 AI의 급격한 발전으로 인간 고유의 연구 영역까지 영향을 미치고 있다. 도구로서의 역할을 넘어 주체적 연구 에이전트로서의 AI에 대한 우려와 기대가 교차한다. 새롭게 전개되는 이러한 시대에 과연 연구란 무엇이며 연구자의 역할은 무엇인가? 본 강연에서는 이러한 질문에 대해 함께 고민해 보고자 한다.`
+                    content: `최근 AI의 급격한 발전으로 인간 고유의 연구 영역까지 영향을 미치고 있다.
+도구로서의 역할을 넘어 주체적 연구 에이전트로서의 AI에 대한 우려와 기대가 교차한다.
+새롭게 전개되는 이러한 시대에 과연 연구란 무엇이며 연구자의 역할은 무엇인가?
+본 강연에서는 이러한 질문에 대해 함께 고민해 보고자 한다.`
                 }}/>
 
                 <SpeakerItem image="/speaker/4.png" name="신진우" desc="KAIST" career={[
@@ -119,17 +123,17 @@ export default function Speaker() {
                     "2012 ~ 2013 IBM T. J. Watson Research Center, Business Analytics and Mathematical Sciences 박사후연구원",
                     "2010 ~ 2012 Georgia Institute of Technology, Algorithms & Randomness Center 박사후연구원",
                 ]} academy={[
-                    "2010 Massachusetts Institute of Technology (MIT) 수학 박사",
-                    "2001 서울대학교 수학·컴퓨터공학 학사",
+                    "2010 Massachusetts Institute of Technology (MIT) 수학 박사 / 2001 서울대학교 수학·컴퓨터공학 학사",
                 ]} speech={{
                     name: "로봇 파운데이션 (RFM) 모델의 현재와 미래, 그리고 우리의 기회",
-                    content: `ChatGPT는 Transformer라는 범용 구조, 예측 가능한 성능 향상을 보장하는 scaling law, 그리고 추가 학습 없이 새로운 과제를 수행하는 in-context learning이라는 세 조건이 갖추어진 뒤에야 임계점을 넘었다. 본 강연은 이 세 조건을 잣대로 로봇 파운데이션 모델(RFM)의 현주소를 진단하고, 로봇의 "ChatGPT 모먼트"가 언제, 어떤 형태로 올 것인지를 전망한다. 향후 RFM은 하나의 거대 end-to-end 모델보다는 추론과 계획을 담당하는 VLM이 상위에서 다수의 행동 모델과 도구를 orchestration하는 agentic 계층 구조로 진화할 것이며, 저지연 action policy, 촉각·힘 등 물리 감각의 통합, 강화학습 기반 post-training이 핵심 경쟁력이 될 것으로 전망한다. 이러한 방향의 실증 사례로 시각·운동·촉각·토크를 통합한 dexterity-first 파운데이션 모델 RLDX-1의 성과를 공유하고, 미국·중국 중심의 RFM 경쟁 속에서 제조 현장 데이터와 손 조작(dexterity)이라는 미개척 영역이 한국 로봇·AI 커뮤니티에 제공하는 차별화된 기회를 제안한다.`
+                    content: `ChatGPT는 Transformer라는 범용 구조, 예측 가능한 성능 향상을 보장하는 scaling law, 그리고 추가 학습 없이 새로운 과제를 수행하는 in-context learning이라는 세 조건이 갖추어진 뒤에야 임계점을 넘었다.
+본 강연은 이 세 조건을 잣대로 로봇 파운데이션 모델(RFM)의 현주소를 진단하고, 로봇의 "ChatGPT 모먼트"가 언제, 어떤 형태로 올 것인지를 전망한다.
+향후 RFM은 하나의 거대 end-to-end 모델보다는 추론과 계획을 담당하는 VLM이 상위에서 다수의 행동 모델과 도구를 orchestration하는 agentic 계층 구조로 진화할 것이며, 저지연 action policy, 촉각·힘 등 물리 감각의 통합, 강화학습 기반 post-training이 핵심 경쟁력이 될 것으로 전망한다.
+이러한 방향의 실증 사례로 시각·운동·촉각·토크를 통합한 dexterity-first 파운데이션 모델 RLDX-1의 성과를 공유하고, 미국·중국 중심의 RFM 경쟁 속에서 제조 현장 데이터와 손 조작(dexterity)이라는 미개척 영역이 한국 로봇·AI 커뮤니티에 제공하는 차별화된 기회를 제안한다.`
                 }}/>
 
                 <SpeakerItem name="안병주" image="/speaker/5.jpeg" desc="Apple" academy={[
-                    "2023 Carnegie Mellon University 전기컴퓨터공학 박사",
-                    "2014 서울대학교 전기컴퓨터공학 석사",
-                    "2012 서울대학교 전기컴퓨터공학 학사",
+                    "2023 Carnegie Mellon University 전기컴퓨터공학 박사 / 2014 서울대학교 전기컴퓨터공학 석사 / 2012 서울대학교 전기컴퓨터공학 학사",
                 ]} career={[
                     "2024 ~ 현재 Apple Research Scientist",
                     "2014 ~ 2017 KIST 영상미디어연구단 연구원",
@@ -140,16 +144,19 @@ Computational imaging과 generative AI를 연구하며, 학교와 산업에서 �
                 }}/>
 
                 <SpeakerItem name="Umar Iqbar" desc="NVIDIA" image="/speaker/6.jpeg" academy={[
-                    "2018 University of Bonn Computer Science 박사",
-                    "2013 Tampere University of Technology Information Technology 석사",
-                    "2010 COMSATS Institute of Information Technology Computer Engineering 학사",
+                    "2018 University of Bonn Computer Science 박사 / 2013 Tampere University of Technology Information Technology 석사 / 2010 COMSATS Institute of Information Technology Computer Engineering 학사",
                 ]} career={[
                     "2019 ~ 현재 NVIDIA Senior Research Manager"
                 ]} speech={{
                     name: "Beyond Locomotion: Turning Human Data into Humanoid Interaction Skills",
-                    content: `Humanoid robots will need to move beyond locomotion and acquire rich interaction skills: picking up objects, manipulating tools, navigating human environments, and performing useful physical work. This talk examines how scalable human data can be transformed into robot-ready capabilities. I will discuss the tradeoffs among internet videos, motion capture, wearables, and teleoperation, and present a human-to-robot motion ecosystem spanning unified human body representations, scalable retargeting, controllable text-to-motion generation, video-based motion recovery, and whole-body humanoid control.
-
-The talk then focuses on the harder problem of human-object interaction. Unlike locomotion, interaction requires object geometry, motion, contact timing, affordance understanding, and physical plausibility, making large-scale data collection and reconstruction much more difficult. I will describe recent efforts such as GRAIL, which uses video models as controllable interaction priors together with known 3D scenes to generate physically grounded loco-manipulation data for humanoids. The central message is that video models, motion datasets, simulation, and robot control must be connected end to end; data only matter when it transfers into real robot behavior`
+                    content:
+`Humanoid robots will need to move beyond locomotion and acquire rich interaction skills: picking up objects, manipulating tools, navigating human environments, and performing useful physical work.
+This talk examines how scalable human data can be transformed into robot-ready capabilities.
+I will discuss the tradeoffs among internet videos, motion capture, wearables, and teleoperation, and present a human-to-robot motion ecosystem spanning unified human body representations, scalable retargeting, controllable text-to-motion generation, video-based motion recovery, and whole-body humanoid control.
+The talk then focuses on the harder problem of human-object interaction.
+Unlike locomotion, interaction requires object geometry, motion, contact timing, affordance understanding, and physical plausibility, making large-scale data collection and reconstruction much more difficult.
+I will describe recent efforts such as GRAIL, which uses video models as controllable interaction priors together with known 3D scenes to generate physically grounded loco-manipulation data for humanoids.
+The central message is that video models, motion datasets, simulation, and robot control must be connected end to end; data only matter when it transfers into real robot behavior`
                 }}/>
 
                 <SpeakerItem image="/speaker/7.jpg" name="오순영" desc="AWS" academy={[
@@ -163,8 +170,12 @@ The talk then focuses on the harder problem of human-object interaction. Unlike 
                     "2021 ~ 현재 과실연 AI미래포럼 국내 최대 AI전문가그룹 공동의장",
                 ]} speech={{
                     name: "From Idea to Impact on AWS: From Generative AI to Autonomous Agents",
-                    content: `AI competitiveness is no longer determined by model performance or demo quality alone. To turn an idea into a production service that scales securely, builders must make deliberate decisions across data connectivity, security, cost, scalability, governance, and operations from day one.
-This session walks through the end-to-end AI journey on AWS: developing models, building generative AI applications and autonomous agents, and operating them at production scale. Using real-world customer examples across industries, we will examine what separates successful AI projects from stalled experiments and share concrete best practices for cloud-native AI development. We will also discuss the technical skills, hands-on experience, and career paths that define an "AI builder," someone who ships ideas as measurable customer value, not just prototypes.`
+                    content:
+`AI competitiveness is no longer determined by model performance or demo quality alone.
+To turn an idea into a production service that scales securely, builders must make deliberate decisions across data connectivity, security, cost, scalability, governance, and operations from day one.
+This session walks through the end-to-end AI journey on AWS: developing models, building generative AI applications and autonomous agents, and operating them at production scale.
+Using real-world customer examples across industries, we will examine what separates successful AI projects from stalled experiments and share concrete best practices for cloud-native AI development.
+We will also discuss the technical skills, hands-on experience, and career paths that define an "AI builder," someone who ships ideas as measurable customer value, not just prototypes.`
                 }} /*objectX={80}*//>
                 
                 <SpeakerItem name="김현승" image="/speaker/8.jpg" desc="크래프톤" academy={[

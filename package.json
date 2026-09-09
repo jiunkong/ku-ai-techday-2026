@@ -11,10 +11,10 @@
   "dependencies": {
     "install": "^0.13.0",
     "motion": "^12.23.12",
-    "next": "15.5.2",
+    "next": "^16.3.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-kakao-maps-sdk": "^1.2.0"
+    "react-kakao-maps-sdk": "^1.2.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

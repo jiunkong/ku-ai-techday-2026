@@ -65,7 +65,7 @@ export default function Home() {
                         <h4 className="text-lg mt-2">ICT명품인재양성사업단/초지능연구센터장</h4>
                         <h4 className="text-xl font-bold">한정현 교수</h4>
                     </div>
-                    <p className="mt-3 w-full max-w-[460px] text-justify whitespace-pre-line">
+                    <p className="mt-3 w-full max-w-[460px] text-justify break-keep whitespace-pre-line">
                         {intro}
                     </p>
                     <LinkText link="https://mpij.korea.ac.kr/mpij/index.do" className="origin-right mt-2 mb-20 lg:mb-0" blank>

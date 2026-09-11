@@ -86,7 +86,7 @@ export default function Speaker() {
                     "2014 KAIST 전산학 석사",
                     "2012 고려대학교 전기전자공학부 학사",
                 ]} career={[
-                    "2020 ~ 현재 Meta 연구원"
+                    "2020 ~ 현재 Meta Research Scientist"
                 ]} speech={{
                     name: "My Bitter Lesson with Computer Graphics",
                     content: 
@@ -98,7 +98,9 @@ I will also share a few advices for graduate students starting their research to
                 }} />
 
                 <SpeakerItem image="/speaker/3.png" name="이경무" desc="서울대학교" academy={[
-                    "1993 미국 Univ. of Southern California 박사 / 1986 서울대학교 제어계측공학과 석사 / 1984 서울대학교 제어계측공학과 학사",
+                    "1993 University of Southern California 전기공학 박사",
+                    "1986 서울대학교 제어계측공학과 석사",
+                    "1984 서울대학교 제어계측공학과 학사",
                 ]} career={[
                     "2022 ~ 현재 서울대학교 석좌교수 (SNU Distinguished Professor)",
                     "2022 ~ 현재 IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 편집장 (Editor-in-Chief)",
@@ -123,7 +125,8 @@ I will also share a few advices for graduate students starting their research to
                     "2012 ~ 2013 IBM T. J. Watson Research Center, Business Analytics and Mathematical Sciences 박사후연구원",
                     "2010 ~ 2012 Georgia Institute of Technology, Algorithms & Randomness Center 박사후연구원",
                 ]} academy={[
-                    "2010 Massachusetts Institute of Technology (MIT) 수학 박사 / 2001 서울대학교 수학·컴퓨터공학 학사",
+                    "2010 Massachusetts Institute of Technology (MIT) 수학 박사",
+                    "2001 서울대학교 수학·컴퓨터공학 학사",
                 ]} speech={{
                     name: "로봇 파운데이션 (RFM) 모델의 현재와 미래, 그리고 우리의 기회",
                     content: `ChatGPT는 Transformer라는 범용 구조, 예측 가능한 성능 향상을 보장하는 scaling law, 그리고 추가 학습 없이 새로운 과제를 수행하는 in-context learning이라는 세 조건이 갖추어진 뒤에야 임계점을 넘었다.
@@ -133,7 +136,9 @@ I will also share a few advices for graduate students starting their research to
                 }}/>
 
                 <SpeakerItem name="안병주" image="/speaker/5.jpeg" desc="Apple" academy={[
-                    "2023 Carnegie Mellon University 전기컴퓨터공학 박사 / 2014 서울대학교 전기컴퓨터공학 석사 / 2012 서울대학교 전기컴퓨터공학 학사",
+                    "2023 Carnegie Mellon University 전기컴퓨터공학 박사",
+                    "2014 서울대학교 전기컴퓨터공학 석사",
+                    "2012 서울대학교 전기컴퓨터공학 학사",
                 ]} career={[
                     "2024 ~ 현재 Apple Research Scientist",
                     "2014 ~ 2017 KIST 영상미디어연구단 연구원",
@@ -144,7 +149,9 @@ Computational imaging과 generative AI를 연구하며, 학교와 산업에서 �
                 }}/>
 
                 <SpeakerItem name="Umar Iqbar" desc="NVIDIA" image="/speaker/6.jpeg" academy={[
-                    "2018 University of Bonn Computer Science 박사 / 2013 Tampere University of Technology Information Technology 석사 / 2010 COMSATS Institute of Information Technology Computer Engineering 학사",
+                    "2018 University of Bonn Computer Science 박사",
+                    "2013 Tampere University of Technology Information Technology 석사",
+                    "2010 COMSATS Institute of Information Technology Computer Engineering 학사",
                 ]} career={[
                     "2019 ~ 현재 NVIDIA Senior Research Manager"
                 ]} speech={{
@@ -156,7 +163,7 @@ I will discuss the tradeoffs among internet videos, motion capture, wearables, a
 The talk then focuses on the harder problem of human-object interaction.
 Unlike locomotion, interaction requires object geometry, motion, contact timing, affordance understanding, and physical plausibility, making large-scale data collection and reconstruction much more difficult.
 I will describe recent efforts such as GRAIL, which uses video models as controllable interaction priors together with known 3D scenes to generate physically grounded loco-manipulation data for humanoids.
-The central message is that video models, motion datasets, simulation, and robot control must be connected end to end; data only matter when it transfers into real robot behavior`
+The central message is that video models, motion datasets, simulation, and robot control must be connected end to end; data only matter when it transfers into real robot behavior.`
                 }}/>
 
                 <SpeakerItem image="/speaker/7.jpg" name="오순영" desc="AWS" academy={[
@@ -192,7 +199,8 @@ PUBG Ally는 플레이어와 함께 게임을 플레이하며 실시간으로 �
                 }}/>
 
                 <SpeakerItem name="표윤석" image="/speaker/9.png" desc="로보티즈" academy={[
-                    "2016 규슈대학교 정보지능공학 석/박사",
+                    "2016 규슈대학교 정보지능공학 박사",
+                    "2013 규슈대학교 정보지능공학 석사",
                     "2009 광운대학교 전자공학과 학사",
                 ]} career={[
                     "2026 ~ 현재 국가인공지능전략위원회 자문위원",

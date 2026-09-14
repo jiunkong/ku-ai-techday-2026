@@ -51,17 +51,17 @@ export default function Program() {
                 <tbody>
                     <Row start="10:00" end="10:10" program="개회사" organizer="한정현 사업단장" note="고려대 컴퓨터학과"/>
                     <Row start="10:10" end="10:40" program="From Data to Driving: Building VLA Autonomy on a Data Flywheel" organizer="이희석 상무" note="42dot"/>
-                    <Row start="10:40" end="11:10" program="My Bitter Lesson with Computer Graphics" organizer="남길주 박사" note="Meta"/>
+                    <Row start="10:40" end="11:10" program="My Bitter Lesson with Computer Graphics" organizer="남길주 Research Scientist" note="Meta"/>
                     <Row start="11:10" end="11:50" program="AI 시대, 연구자의 의미와 역할은 무엇인가?" organizer="이경무 교수" note="서울대학교" tag={{ text: "키노트", color: "blue" }}/>
 
                     <Row start="11:50" end="13:30" program="점심" center/>
 
                     <Row start="13:30" end="14:10" program="로봇 파운데이션 (RFM) 모델의 현재와 미래, 그리고 우리의 기회" organizer="신진우 교수" note="KAIST" tag={{ text: "키노트", color: "blue" }}/>
-                    <Row start="14:10" end="14:40" program="Technology vs. Use Cases: Reflections on Al Research" organizer="안병주 박사" note="Apple"/>
+                    <Row start="14:10" end="14:40" program="Technology vs. Use Cases: Reflections on Al Research" organizer="안병주 Research Scientist" note="Apple"/>
 
                     <Row start="14:40" end="14:50" program="Break" center/>
 
-                    <Row start="14:50" end="15:20" program="Beyond Locomotion: Turning Human Data into Humanoid Interaction Skills" organizer="Umar Iqbar" note="NVIDIA" tag={{ text: "온라인", color: "green" }}/>
+                    <Row start="14:50" end="15:20" program="Beyond Locomotion: Turning Human Data into Humanoid Interaction Skills" organizer="Umar Iqbal Senior Research Manager" note="NVIDIA" tag={{ text: "온라인", color: "green" }}/>
                     <Row start="15:20" end="15:50" program="From Idea to Impact on AWS: From Generative AI to Autonomous Agents" organizer="오순영 수석" note="AWS"/>
 
                     <Row start="15:50" end="16:20" program="Coffee Break 및 포스터 세션" center/>

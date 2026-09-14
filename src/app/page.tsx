@@ -4,7 +4,7 @@ import { LinkText } from "@/components/LinkText";
 import Image from "next/image";
 
 export default function Home() {
-    const intro = `고려대학교 ICT명품인재양성사업단/초지능연구센터는 10월 20일(수)에 제4회 AI Tech Day를 개최합니다. 본교 하나스퀘어에서 열리는 AI Tech Day 2026에서는 서울대학교 이경무 교수, KAIST 신진우 교수와 42dot, Meta, Apple, NVIDIA, AWS, 크래프톤, 로보티즈, LG전자의 AI 연구개발 책임자들이 AI 연구개발 성과와 미래 전략을 발표합니다. 여기에 더불어, 사업단 소속 연구실의 포스터와 데모 세션이 준비되고, 기업체 홍보 및 리크루팅 프로그램도 마련됩니다. AI의 현재와 미래를 보고자 하는 분들의 많은 참석 바랍니다.`
+    const intro = `고려대학교 ICT명품인재양성사업단/초지능연구센터는 10월 20일(화), 본교 하나스퀘어에서 제4회 AI Tech Day를 개최합니다. AI Tech Day 2026에서는 서울대학교 이경무 교수와 KAIST 신진우 교수의 키노트 강연을 비롯해 42dot, Meta, Apple, NVIDIA, AWS, 크래프톤, 로보티즈, LG전자 등 국내외 주요 기업의 AI 연구개발 전문가들이 최신 AI 기술과 연구개발 성과, 미래 전략을 공유합니다. 또한 사업단 소속 연구실의 연구성과 포스터 및 데모 세션, 기업 홍보 및 리크루팅 프로그램과 함께, 고려대학교와 AWS가 공동으로 진행하는 ‘AWS AI Innovators Challenge’의 최종 데모 및 시상도 마련됩니다. AI의 현재를 살펴보고 미래를 함께 모색하는 뜻깊은 자리에 많은 관심과 참여 바랍니다.`
 
     return (
         <>            
@@ -53,8 +53,8 @@ export default function Home() {
                 <div>
                     <h3 className="font-bold text-2xl mt-10">초청 강연</h3>
                     <p className="mt-1">서울대학교, KAIST, 42dot, Meta, Apple, NVIDIA, AWS, 크래프톤, 로보티즈, LG전자</p>
-                    <h3 className="font-bold text-2xl mt-5">기업 부스 (리쿠르팅 포함)</h3>
-                    <p className="mt-1">AWS, 크래프톤, 퓨리오사 AI, 로민, 젠젠AI, 42dot, 카카오모빌리티, 슈퍼브 AI</p>
+                    <h3 className="font-bold text-2xl mt-5">기업 부스 (리크루팅 포함)</h3>
+                    <p className="mt-1">AWS, 크래프톤, 퓨리오사AI, 로민, 젠젠AI, 42dot, 카카오모빌리티, 슈퍼브 AI, LG CNS</p>
                 </div>
                 <div className="mt-45 lg:mt-30 lg:absolute lg:top-0 lg:right-10 flex flex-col lg:items-end">
                     <div className="w-50 h-50 overflow-hidden rounded-full mx-auto">
@@ -65,7 +65,7 @@ export default function Home() {
                         <h4 className="text-lg mt-2">ICT명품인재양성사업단/초지능연구센터장</h4>
                         <h4 className="text-xl font-bold">한정현 교수</h4>
                     </div>
-                    <p className="mt-3 w-full max-w-[460px] text-justify break-keep whitespace-pre-line">
+                    <p className="mt-3 w-full max-w-[500px] text-justify break-keep whitespace-pre-line">
                         {intro}
                     </p>
                     <LinkText link="https://mpij.korea.ac.kr/mpij/index.do" className="origin-right mt-2 mb-20 lg:mb-0" blank>

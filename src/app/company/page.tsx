@@ -3,7 +3,7 @@
 import Image from "next/image"
 import { motion } from "motion/react";
 
-const companyNumber = 14
+const companyNumber = 16
 
 export default function Company() {
     const makeLogos = () => {

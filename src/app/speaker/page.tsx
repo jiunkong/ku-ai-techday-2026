@@ -148,7 +148,7 @@ I will also share a few advices for graduate students starting their research to
 Computational imaging과 generative AI를 연구하며, 학교와 산업에서 경험한 서로 다른 연구 방식`
                 }}/>
 
-                <SpeakerItem name="Umar Iqbar" desc="NVIDIA" image="/speaker/6.jpeg" academy={[
+                <SpeakerItem name="Umar Iqbal" desc="NVIDIA" image="/speaker/6.jpeg" academy={[
                     "2018 University of Bonn Computer Science 박사",
                     "2013 Tampere University of Technology Information Technology 석사",
                     "2010 COMSATS Institute of Information Technology Computer Engineering 학사",

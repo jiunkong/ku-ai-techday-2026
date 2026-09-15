@@ -215,13 +215,25 @@ PUBG Ally는 플레이어와 함께 게임을 플레이하며 실시간으로 �
 오픈소스 휴머노이드(AI Worker, AI Sapiens) 개발 사례를 바탕으로 텔레오퍼레이션 데이터 수집부터 VLA 모델 학습, 강화학습 기반 보행 제어, 실로봇 배포까지 이어지는 End-to-End AI 파이프라인을 공유합니다.`
                 }}/>
 
-                <SpeakerItem name="이재욱" image="/speaker/10.png" desc="LG전자" academy={[
-                    
+                <SpeakerItem name="이재욱" image="/speaker/10.jpg" desc="LG전자" academy={[
+                    "2008 서울대학교 기계항공공학과 석사",
+                    "1997 서울대학교 기계공학과 학사"
                 ]} career={[
-                    
+                    "2026 ~ 현재 국가인공지능전략위원회 휴머노이드분과 자문위원",
+                    "2025 ~ 현재 LG전자 HS사업본부 HS로보틱스연구소장",
+                    "2022 ~ 2026 LG전자 CTO부문 연구위원",
+                    "                        - 휴머노이드로봇 Task 리더",
+                    "                        - Embodied AI 로봇 Task 리더",
+                    "                        - 모바일매니퓰레이터 Task 리더"
                 ]} speech={{
-                    name: "",
-                    content: ``
+                    name: "Physical AI 시대_LG의 로봇 생태계",
+                    content: 
+`LG는 One LG 체계를 기반으로 로봇, 데이터, AI, 통신, 배터리를 통합한 Physical AI Full
+Stack 생태계를 구축하고 있습니다.
+제조·물류·상업·홈 현장에서 생성되는 데이터를 Data Factory로 수집하고 RFM/VLA를 지속적
+으로 학습시키는 Data Flywheel을 통해 차별화된 로봇 경쟁력을 확보하고 있습니다.
+이번 강연에서는 LG전자가 가전 중심에서 로봇 제조 및 Physical AI 플랫폼 사업자로 진화
+하는 과정을 소개합니다.`
                 }}/>
             </div>
         </div>

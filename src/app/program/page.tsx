@@ -68,7 +68,7 @@ export default function Program() {
 
                     <Row start="16:20" end="16:50" program="Toward Fully Autonomous Embodied Agents" organizer="김현승 팀장" note="크래프톤"/>
                     <Row start="16:50" end="17:20" program="Physical AI 시대의 휴머노이드 로봇 개발" organizer="표윤석 부사장" note="로보티즈"/>
-                    <Row start="17:20" end="17:50" program="TBD" organizer="이재욱 소장" note="LG전자"/>
+                    <Row start="17:20" end="17:50" program="Physical AI 시대_LG의 로봇 생태계" organizer="이재욱 소장" note="LG전자"/>
 
                     <Row start="17:50" end="18:00" program="시상 및 폐회사 (포스터/데모, 고려대학교 x AWS AI Innovators Challenge)" organizer="한정현 사업단장" note="고려대 컴퓨터학과"/>
                 </tbody>

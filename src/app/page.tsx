@@ -58,7 +58,7 @@ export default function Home() {
                 </div>
                 <div className="mt-45 lg:mt-30 lg:absolute lg:top-0 lg:right-10 flex flex-col lg:items-end">
                     <div className="w-50 h-50 overflow-hidden rounded-full mx-auto">
-                        <Image src={"/picture.png"} width={200} height={200} alt="" className="w-full h-full object-cover object-[center_80%]"/>
+                        <Image src={"/picture.png"} width={200} height={200} alt="" className="w-full h-full object-cover object-[center_30%]"/>
                     </div>
                     <div className="lg:text-right mt-5">
                         <h3 className="font-bold text-2xl">인사말</h3>

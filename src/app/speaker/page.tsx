@@ -226,14 +226,11 @@ PUBG Ally는 플레이어와 함께 게임을 플레이하며 실시간으로 �
                     "                        - Embodied AI 로봇 Task 리더",
                     "                        - 모바일매니퓰레이터 Task 리더"
                 ]} speech={{
-                    name: "Physical AI 시대_LG의 로봇 생태계",
+                    name: "Physical AI 시대: LG의 로봇 생태계",
                     content: 
-`LG는 One LG 체계를 기반으로 로봇, 데이터, AI, 통신, 배터리를 통합한 Physical AI Full
-Stack 생태계를 구축하고 있습니다.
-제조·물류·상업·홈 현장에서 생성되는 데이터를 Data Factory로 수집하고 RFM/VLA를 지속적
-으로 학습시키는 Data Flywheel을 통해 차별화된 로봇 경쟁력을 확보하고 있습니다.
-이번 강연에서는 LG전자가 가전 중심에서 로봇 제조 및 Physical AI 플랫폼 사업자로 진화
-하는 과정을 소개합니다.`
+`LG는 One LG 체계를 기반으로 로봇, 데이터, AI, 통신, 배터리를 통합한 Physical AI Full Stack 생태계를 구축하고 있습니다.
+제조·물류·상업·홈 현장에서 생성되는 데이터를 Data Factory로 수집하고 RFM/VLA를 지속적으로 학습시키는 Data Flywheel을 통해 차별화된 로봇 경쟁력을 확보하고 있습니다.
+이번 강연에서는 LG전자가 가전 중심에서 로봇 제조 및 Physical AI 플랫폼 사업자로 진화하는 과정을 소개합니다.`
                 }}/>
             </div>
         </div>

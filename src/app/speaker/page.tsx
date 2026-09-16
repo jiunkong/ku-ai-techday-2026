@@ -186,7 +186,6 @@ We will also discuss the technical skills, hands-on experience, and career paths
                 }} /*objectX={80}*//>
                 
                 <SpeakerItem name="김현승" image="/speaker/8.jpg" desc="크래프톤" academy={[
-                    "현재 KAIST 김재철AI대학원 석박통합과정",
                     "2021 고려대학교 컴퓨터학 학사",
                 ]} career={[
                     "2024 ~ 현재 크래프톤 AI Companion Team Lead",

@@ -4,8 +4,8 @@ import { LinkText } from "@/components/LinkText";
 import Image from "next/image";
 
 export default function Home() {
-    const intro = `고려대학교 ICT명품인재양성사업단/초지능연구센터는 10월 20일(화) 본교 하나스퀘어에서 제4회 AI Tech Day를 개최합니다. AI Tech Day 2026에서는 AI 분야 국내외 최고 전문가들이 최신 AI 기술과 연구개발 성과, 미래 전략을 공유합니다. 또한 사업단 소속 연구실의 연구성과 포스터 및 데모 세션, 기업 홍보 및 리크루팅 프로그램과 함께, 고려대학교와 AWS가 공동으로 진행하는 ‘AWS AI Innovators Challenge’의 최종 데모 및 시상도 마련됩니다. AI의 현재를 살펴보고 미래를 함께 모색하는 뜻깊은 자리에 많은 관심과 참여 바랍니다.`
-    const programChairs: { name: string, image?: string }[] = [
+    const intro = `고려대학교 ICT명품인재양성사업단/초지능연구센터는 10월 20일(화) 본교 하나스퀘어에서 제4회 AI Tech Day를 개최합니다. AI Tech Day 2026에서는 AI 분야 국내외 최고 전문가들이 최신 AI 기술과 연구개발 성과, 미래 전략을 공유합니다. 또한 사업단 소속 연구실의 연구성과 포스터 및 데모 세션, 기업 홍보 및 리크루팅 프로그램과 함께, 고려대학교와 AWS가 공동으로 진행하는 ‘AWS Innovators Challenge’의 최종 데모 및 시상도 마련됩니다. AI의 현재를 살펴보고 미래를 함께 모색하는 뜻깊은 자리에 많은 관심과 참여 바랍니다.`
+    const programChairs: { name: string, image: string }[] = [
         { name: "강형엽 교수", image: "/pic1.png" },
         { name: "문경식 교수", image: "/pic2.png" },
     ]
@@ -62,15 +62,27 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="flex flex-col lg:items-end lg:pt-0">
-                    <div className="w-50 h-50 overflow-hidden rounded-full mx-auto lg:w-[clamp(11rem,20vh,13.75rem)] lg:h-[clamp(11rem,20vh,13.75rem)]">
-                        <Image src={"/picture.png"} width={200} height={200} alt="" className="w-full h-full object-cover object-[center_30%]"/>
+                    <div className="grid w-full grid-cols-3 gap-3 sm:gap-5" aria-label="행사 관계자 소개">
+                        <article className="flex flex-col items-center text-center">
+                            <div className="relative aspect-square w-full max-w-36 overflow-hidden rounded-full bg-white/5 ring-1 ring-white/10">
+                                <Image src="/picture.png" fill sizes="(max-width: 640px) 25vw, 144px" alt="한정현 교수" className="scale-[1.3] object-cover object-[center_30%]" />
+                            </div>
+                            <p className="mt-3 text-xs leading-snug text-(--subtext) sm:text-sm">ICT명품인재양성사업단장/초지능연구센터장</p>
+                            <p className="mt-1 font-bold">한정현 교수</p>
+                        </article>
+                        {programChairs.map((chair) => (
+                            <article key={chair.name} className="flex flex-col items-center text-center">
+                                <div className="relative aspect-square w-full max-w-36 overflow-hidden rounded-full bg-white/5 ring-1 ring-white/10">
+                                    <Image src={chair.image} fill sizes="(max-width: 640px) 25vw, 144px" alt={chair.name} className="object-cover object-[center_10%]" />
+                                </div>
+                                <p className="mt-3 text-xs text-(--subtext) sm:text-sm">프로그램 위원장</p>
+                                <p className="mt-1 break-keep text-xs font-bold sm:text-sm">고려대학교 컴퓨터학과</p>
+                                <p className="break-keep font-bold">{chair.name}</p>
+                            </article>
+                        ))}
                     </div>
-                    <div className="lg:text-right mt-5">
-                        <h3 className="font-bold text-2xl">인사말</h3>
-                        <h4 className="text-lg mt-2">ICT명품인재양성사업단장/초지능연구센터장</h4>
-                        <h4 className="text-xl font-bold">한정현 교수</h4>
-                    </div>
-                    <p className="mt-3 w-full max-w-[500px] text-justify break-keep whitespace-pre-line lg:text-[clamp(0.875rem,1.45vh,1rem)] lg:leading-[clamp(1.5rem,2.2vh,1.75rem)]">
+                    <h3 className="mt-8 w-full max-w-[500px] border-b border-white/20 pb-2 text-2xl font-bold">인사말</h3>
+                    <p className="mt-4 w-full max-w-[500px] text-justify break-keep whitespace-pre-line lg:text-[clamp(0.875rem,1.45vh,1rem)] lg:leading-[clamp(1.5rem,2.2vh,1.75rem)]">
                         {intro}
                     </p>
                     <LinkText link="https://mpij.korea.ac.kr/mpij/index.do" className="origin-right mt-2" blank>
@@ -81,22 +93,6 @@ export default function Home() {
                             <span>사업단 홈페이지</span>
                         </div>
                     </LinkText>
-                    <div className="mt-14 grid w-full grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-8 lg:mt-[clamp(2rem,4vh,3.5rem)] lg:gap-8" aria-label="프로그램 위원장 소개">
-                        {programChairs.map((chair) => (
-                            <article key={chair.name} className="flex flex-col items-center">
-                                <div className="relative aspect-square w-36 overflow-hidden rounded-full bg-white/5 ring-1 ring-white/10 sm:w-40 lg:w-[clamp(8rem,14vh,10rem)]">
-                                    {chair.image ? (
-                                        <Image src={chair.image} fill sizes="160px" alt={`${chair.name} 프로그램 위원장`} className="object-cover object-[center_10%]" />
-                                    ) : null}
-                                </div>
-                                <div className="mt-4 text-center lg:mt-3">
-                                    <p className="text-sm text-(--subtext)">프로그램 위원장</p>
-                                    <p className="mt-1 break-keep font-bold">고려대학교 컴퓨터학과</p>
-                                    <p className="break-keep font-bold">{chair.name}</p>
-                                </div>
-                            </article>
-                        ))}
-                    </div>
                 </div>
             </div>
         </>

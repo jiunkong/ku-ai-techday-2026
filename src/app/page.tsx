@@ -4,7 +4,7 @@ import { LinkText } from "@/components/LinkText";
 import Image from "next/image";
 
 export default function Home() {
-    const intro = `고려대학교 ICT명품인재양성사업단/초지능연구센터는 10월 20일(화) 본교 하나스퀘어에서 제4회 AI Tech Day를 개최합니다. AI Tech Day 2026에서는 AI 분야 국내외 최고 전문가들이 최신 AI 기술과 연구개발 성과, 미래 전략을 공유합니다. 또한 사업단 소속 연구실의 연구성과 포스터 및 데모 세션, 기업 홍보 및 리크루팅 프로그램과 함께, 고려대학교와 AWS가 공동으로 진행하는 ‘AWS Innovators Challenge’의 최종 데모 및 시상도 마련됩니다. AI의 현재를 살펴보고 미래를 함께 모색하는 뜻깊은 자리에 많은 관심과 참여 바랍니다.`
+    const intro = `고려대학교 ICT명품인재양성사업단/초지능연구센터는 10월 20일(화) 본교 하나스퀘어에서 제4회 AI Tech Day를 개최합니다. AI Tech Day 2026에서는 AI 분야 국내외 최고 전문가들이 최신 AI 기술과 연구개발 성과, 미래 전략을 공유합니다. 또한 사업단 소속 연구실의 연구성과 포스터 및 데모 세션, 기업 홍보 및 리크루팅 프로그램과 함께, 고려대학교와 AWS가 공동으로 진행하는 ‘AI Innovators Challenge’의 최종 데모 및 시상도 마련됩니다. AI의 현재를 살펴보고 미래를 함께 모색하는 뜻깊은 자리에 많은 관심과 참여 바랍니다.`
     const programChairs: { name: string, image: string }[] = [
         { name: "강형엽 교수", image: "/pic1.png" },
         { name: "문경식 교수", image: "/pic2.png" },

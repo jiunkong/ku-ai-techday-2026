@@ -10,7 +10,7 @@ export const Footer = () => {
             <div className="h-full flex flex-col justify-center text-xs w-30 lg:text-base lg:w-fit">
                 <Link href={"https://mpij.korea.ac.kr/mpij/index.do"} target="_blank" rel="noreferrer">
                     <span className="text-gray-500">Copyright © </span>
-                    <span className="text-orange-500">Superintelligence Center </span>
+                    <span className="text-orange-500">Superintelligence Research Center </span>
                     <span className="text-gray-500">2026</span>
                 </Link>
             </div>
